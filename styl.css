@@ -7,9 +7,44 @@ max-width: 100%;
 
 body {
 	background-color: black;
-	
+
+
 
 }
+
+.container {
+animation: transitionIn 1s;	
+}
+
+@keyframes transitionIn {
+from {
+opacity: 0;
+transform: translateY(-10px);
+}	
+
+to {
+opacity: 1;
+transform: translateY(0);	
+}
+}
+
+::-webkit-scrollbar {
+width: 8px;
+}
+::-webkit-scrollbar-track {
+border-left: 1px solid #000;
+}
+::-webkit-scrollbar-thumb {
+background: gray;
+    -webkit-box-shadow: inset 0 0 6px black;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #696969;
+    -webkit-box-shadow: inset 0 0 6px black;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: #696969;
+} 
 
 #wrapper {
 max-width: 100%;
@@ -28,6 +63,7 @@ margin:0 0 20px 10px;
 
 
 
+
 gor img {
 	margin:30px 0 0 0;
 width: 100%;
@@ -40,23 +76,36 @@ display: block;
 
 #wers2 { margin: -20px 0 0 0; }
 
+#wers1 { margin: -20px 0 0 0; }
+
+#hala { margin: -20px 0 0 0; }
+
 #wers4 { margin: 50px 0 50px 0; }
 
 #wers5 { margin: 50px 0 50px 0; }
 
+#wers6 { margin: 0 0 0 0; }
+
+#film {
+text-align: center;
+margin: -420px 0 150px 0;	
+}
+
+
+
 
 #google {
-	
-    -webkit-filter: grayscale(100%);
-       -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-         -o-filter: grayscale(100%);
-            filter: grayscale(100%);
+            filter: grayscale(100%) invert(100%);
 }
 
 #tab{
 	items-align: center;
 
+}
+
+#obr {
+text-align: center;
+margin: 0 25% 0 25%;
 }
 
 input {
@@ -99,6 +148,8 @@ max-width: 100%;
 text-align: center; 
 color: white;
 
+background: url('');
+
 }
 
 
@@ -110,7 +161,22 @@ text-align: center;
 
 
 
+}
 
+span#szukaj {
+display:block;
+width:80px;
+height:25px;
+
+
+
+
+}
+
+
+#profile {
+text-align: center;
+margin: 0 5% 100px 5%;
 }
 
 #ksi { 
@@ -133,13 +199,28 @@ margin:30px 0 0 0;
 }
 
 ok {
+
 	font-family: arial;
 	display: flex;
+
+	
 	
 	
 }
 
 ok1 {
+	font-family: arial;
+	display: flex;
+	
+}
+
+ok4 {
+	font-family: arial;
+	display: flex;
+	
+}
+
+ok5 {
 	font-family: arial;
 	display: flex;
 	
@@ -181,7 +262,7 @@ text-decoration: none;
 }
 
 a.menu:hover {
-background-color: gray;
+background-color: #171414;
 }
 
 
