@@ -119,8 +119,9 @@ box-sizing: border-box;
 
 }
 
-#box1 {
-
+#pero {
+	margin: -40px 0 0 0;
+	text-align: center;
 }
 
 
@@ -155,7 +156,7 @@ background: url('');
 
 
 
-#but {
+#submit {
 max-width: 100%;
 text-align: center; 
 
@@ -163,7 +164,12 @@ text-align: center;
 
 }
 
-span#szukaj {
+#dzie {
+text-align: center; 
+margin: 20px 0 0 0;
+}
+
+span#submit {
 display:block;
 width:80px;
 height:25px;
